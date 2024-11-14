@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<nav class="navbar">
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a class ="portfolio">PORTFOLIO</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<hr class = "hr_menu" style="margin-top: 1%; display: flex;" >
+
+<h1 class="my-projects">
+  <span style="font-weight: normal;">My</span> 
+  <span style="font-weight: bold;">Projects</span>
+</h1>
+
+
+<div class="gallery-container">
+  <div class="gallery">
+      <div class="gallery-slide">
+        <div class="image-container">
+          <img src="images/araba2.png" alt="Resim 1">
+          <div class="overlay"><strong>Teknofest Robotaksi Binek Otonom</strong> <br> I participated as a finalist in the Teknofest Robotaxi Autonomous Vehicle Competition. During this process, I developed autonomous driving algorithms and worked on real-time data processing and sensor integration. I designed AI and ROS-based systems to enable safe and efficient vehicle movement. This competition was an invaluable experience that enhanced my engineering skills and allowed me to contribute to the future of autonomous vehicle technology.</div>
+        </div>
+        <div class="image-container">
+          <img src="images/ulasımdayapay.jpg" alt="Resim 2">
+          <div class="overlay"><strong>Teknofest Ulaşımda Yapay Zeka</strong> <br> I participated in the Teknofest Artificial Intelligence in Transportation Competition, where I developed AI-based solutions to improve transportation efficiency and safety. This experience allowed me to work on advanced algorithms, real-time data analysis, and intelligent transportation systems. The competition provided me with valuable insights into the role of artificial intelligence in shaping the future of mobility.</div>
+        </div>
+        <div class="image-container">
+          <img src="images/hand.jpg" alt="Resim 3">
+          <div class="overlay"><strong>Hand Controlled Mouse</strong> <br> I developed a Hand-Controlled Mouse project, where hand gestures replace traditional mouse functions, allowing users to control cursor movement and perform clicks with natural hand motions. Using computer vision and machine learning, I designed a system that detects and interprets hand gestures in real time, providing an intuitive, touchless interaction experience. This project deepened my understanding of human-computer interaction and the potential of gesture-based interfaces.</div>
+        </div>
+      </div>
+      <div class="gallery-slide">
+        <div class="image-container">
+          <img src="images/face.jpg" alt="Resim 4">
+          <div class="overlay"><strong>Facial Recognition Attendance</strong> <br> I created a Face Attendance System that automates attendance tracking using facial recognition. This project uses computer vision and machine learning algorithms to identify and verify individuals' faces, ensuring accurate and efficient attendance logging without manual intervention. Through this project, I gained hands-on experience in facial recognition technology and developed a practical solution for streamlined attendance management.</div>
+        </div>
+        <div class="image-container">
+          <img src="images/voice.png" alt="Resim 5">
+          <div class="overlay"><strong>Voice Assistant</strong> <br> I developed a Voice Assistant project capable of controlling any device connected to the internet. This assistant leverages natural language processing to interpret commands and integrates with smart home devices, IoT systems, and online services. From adjusting lights and thermostats to managing online tasks and reminders, it enables seamless, hands-free control over a range of connected devices. Through this project, I gained expertise in IoT integration, API utilization, and conversational AI, creating an assistant that brings convenience and automation to everyday life.</div>
+        </div>
+        <div class="image-container">
+          <img src="images/havasavunma.png" alt="Resim 6">
+          <div class="overlay"><strong>Teknofest Hava Savunma Sistemleri</strong> <br> In the Teknofest Air Defense Systems Competition, I developed a turret system capable of tracking targets, identifying friend or foe, and neutralizing threats. Using AI and computer vision, I designed a defense mechanism that automatically detects, classifies, and follows balloon targets. The system quickly identifies threats and responds effectively, offering a strategic solution in air defense technology. This experience allowed me to enhance my engineering skills in the field of defense systems.</div>
+        </div>
+      </div>
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10096;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

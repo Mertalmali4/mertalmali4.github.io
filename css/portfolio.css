@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh; 
+  background-color: #333; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.navbar ul {
+  font-family: 'Roboto';
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 52%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+ 
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 35px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  color: #ffcc00;
+}
+
+a.portfolio {
+  color: #ffcc00 !important;
+}
+
+.my-projects {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-slide {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: calc(33.33% - 10px); 
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden; 
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 0; 
+  transition: height 0.5s ease;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.image-container:hover .overlay {
+  height: 100%;
+}
+
+/* Buton ayarları */
+button {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 1017px) {
+  .gallery {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .gallery-slide {
+    flex-direction: column;
+    display: block;
+  }
+
+ .hr_menu  {
+    display: none !important;
+  } 
+
+  li a {
+    padding: 0px;
+  }
+
+
+  
+  .navbar ul {
+    display: none; 
+    flex-direction: column;
+    position: fixed; 
+    top: -20px;
+    left: 0;
+    width: 100vw;
+    list-style: none;
+    height: 60vh;
+    background: #333; 
+    padding: 20px 0;
+    z-index: 5;
+}
+
+.navbar li a{
+  padding: 10px;
+}
+
+.navbar ul li {
+    margin: 15px 0;
+    padding: 10px 0;
+    z-index: 0;
+}
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: height 0.5s ease;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.image-container:hover .overlay {
+  height: 100%;
+}
+
+.navbar ul.open {
+    display: flex;
+}
+
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 6;
+}
+  .image-container {
+    width: 90%; 
+    
+    margin: 10px auto; 
+  }
+
+
+  button {
+    display: none;
+  }
+}

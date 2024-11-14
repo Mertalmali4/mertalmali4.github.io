@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cafe.jpeg"); 
+    background-size: cover; 
+    background-position: center 40%; 
+    background-repeat: no-repeat; 
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.navbar ul {
+    font-family: 'Roboto';
+    top: 70px; 
+    width: 100%;
+    padding: 35px 0;
+    list-style: none;
+    background: none;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    z-index: 5;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00; 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/RobotoCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+
+.hello {
+    margin-left: 1%;
+    margin-top: 5%;
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffe6b5;
+}
+
+.header {
+    margin-left: 1%;
+    margin-top: 2%;
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+
+
+
+.date-display {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    text-align: right;
+    background: none;
+    font-size: 1.2rem;
+}
+
+
+.day {
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff5cc;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-family: 'Roboto';
+    font-size: 3.3rem;
+    color: #f0f0f0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .day {
+        font-size: 2.5rem;
+    }
+
+    .date {
+        font-size: 2.3rem;
+    }
+
+    .header
+    {
+        padding-top: 20px;
+    }
+
+
+
+    .navbar ul {
+        display: none; 
+        flex-direction: column;
+        position: fixed; 
+        top: -20px;
+        left: 0;
+        width: 100vw;
+        list-style: none;
+        height: 60vh;
+        background: #333; 
+        padding: 20px 0;
+        z-index: 5;
+    }
+
+
+    .navbar li a{
+        padding: 10px;
+      }
+
+    .navbar ul li {
+        margin: 32px 0;
+        padding: 10px 0;
+        z-index: 0;
+    }
+
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 6;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
